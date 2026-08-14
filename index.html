@@ -3,17 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio of Muhamad Ikhmal Hijaz Bin Zulkefli, a system developer and business intelligence report builder with experience in web systems, databases, Tableau, Power BI, and Metabase.">
+    <meta name="description" content="IT services and selected system development work by Muhamad Ikhmal Hijaz, serving individuals and businesses across Selangor and Kuala Lumpur.">
     <meta name="author" content="Muhamad Ikhmal Hijaz Bin Zulkefli">
     <meta name="theme-color" content="#071726">
 
-    <meta property="og:title" content="Muhamad Ikhmal Hijaz | Systems & BI Developer">
-    <meta property="og:description" content="Building dependable systems, databases, and decision-ready reports since 2017.">
+    <meta property="og:title" content="Ikhmal Hijaz | IT Services &amp; System Development">
+    <meta property="og:description" content="Practical IT support, business systems, websites, data services, and selected technical work.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hijaz96.github.io/Portfolio/">
     <meta property="og:image" content="https://hijaz96.github.io/Portfolio/assets/images/data-systems-hero.png">
 
-    <title>Muhamad Ikhmal Hijaz | Systems & BI Developer</title>
+    <title>Ikhmal Hijaz | IT Services &amp; System Development</title>
 
     <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +27,7 @@
 <body data-page="home">
     <a class="skip-link" href="#main-content" data-i18n="skipLink">Skip to main content</a>
 
-    <nav class="navbar navbar-expand-lg fixed-top" aria-label="Primary navigation">
+    <nav class="navbar navbar-expand-lg fixed-top portfolio-navbar is-scrolled" aria-label="Primary navigation">
         <div class="container">
             <a class="navbar-brand" href="#home" aria-label="Ikhmal Hijaz home" data-i18n-aria="homeLabel">
                 <span class="brand-mark">IH</span>
@@ -40,10 +40,9 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-lg-center">
-                    <li class="nav-item"><a class="nav-link click-scroll" href="#about" data-i18n="navAbout">About</a></li>
-                    <li class="nav-item"><a class="nav-link click-scroll" href="#experience" data-i18n="navExperience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link click-scroll" href="#expertise" data-i18n="navExpertise">Expertise</a></li>
-                    <li class="nav-item"><a class="nav-link click-scroll" href="#education" data-i18n="navEducation">Education</a></li>
+                    <li class="nav-item"><a class="nav-link click-scroll" href="#services" data-i18n="navServices">Services</a></li>
+                    <li class="nav-item"><a class="nav-link click-scroll" href="#work" data-i18n="navWork">Work</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html" data-i18n="navAbout">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="portfolio.html" data-i18n="navPortfolio">Portfolio</a></li>
                     <li class="nav-item ms-lg-2">
                         <div class="language-switcher" role="group" aria-label="Select language" data-i18n-aria="languageLabel">
@@ -52,7 +51,7 @@
                         </div>
                     </li>
                     <li class="nav-item ms-lg-3">
-                        <a class="nav-cta" href="mailto:ikhmalhijaz96@gmail.com?subject=Project%20Enquiry%20from%20Your%20Portfolio"><span data-i18n="navContact">Let’s talk</span> <i class="bi-arrow-up-right" aria-hidden="true"></i></a>
+                        <a class="nav-cta" href="mailto:ikhmalhijaz96@gmail.com?subject=Project%20or%20IT%20Service%20Enquiry"><span data-i18n="navContact">Let’s talk</span> <i class="bi-arrow-up-right" aria-hidden="true"></i></a>
                     </li>
                 </ul>
             </div>
@@ -60,251 +59,153 @@
     </nav>
 
     <main id="main-content">
-        <section class="hero" id="home">
-            <div class="hero-visual" aria-hidden="true"></div>
-            <div class="hero-overlay" aria-hidden="true"></div>
-            <div class="container hero-container">
-                <div class="row align-items-center min-vh-100">
-                    <div class="col-xl-7 col-lg-8">
-                        <p class="eyebrow reveal" data-i18n="heroEyebrow">System Developer · BI Report Builder</p>
-                        <h1 class="reveal reveal-delay-1" data-i18n-html="heroTitle">I turn complex operations into <em>clear, dependable systems.</em></h1>
-                        <p class="hero-lead reveal reveal-delay-2" data-i18n="heroLead">I’m Muhamad Ikhmal Hijaz, an IT professional with experience across system development, database design, application maintenance, and business intelligence reporting.</p>
-
-                        <div class="hero-actions reveal reveal-delay-3">
-                            <a class="button button-primary" href="#experience"><span data-i18n="heroExplore">Explore my experience</span> <i class="bi-arrow-down" aria-hidden="true"></i></a>
-                            <a class="button button-secondary" href="https://drive.google.com/drive/folders/1k_l9a9I05WQOcxmaMkA9OB3ly-VntmB7?usp=sharing" target="_blank" rel="noopener noreferrer"><span data-i18n="heroResume">Download résumé</span> <i class="bi-box-arrow-up-right" aria-hidden="true"></i></a>
+        <section class="portfolio-hero home-hero" id="home">
+            <div class="portfolio-hero-image" aria-hidden="true"></div>
+            <div class="container portfolio-hero-content">
+                <div class="row">
+                    <div class="col-xl-8 col-lg-9">
+                        <p class="eyebrow" data-i18n="homeHeroKicker">IT services · Systems · Data</p>
+                        <h1 data-i18n-html="homeHeroTitle">Practical technology that <em>solves real work.</em></h1>
+                        <p data-i18n="homeHeroBody">I help individuals and businesses fix technology problems, build useful systems, and turn operational needs into dependable digital solutions.</p>
+                        <div class="hero-actions">
+                            <a class="button button-primary" href="#services"><span data-i18n="homeHeroServices">Explore services</span> <i class="bi-arrow-down" aria-hidden="true"></i></a>
+                            <a class="button button-secondary" href="#work"><span data-i18n="homeHeroWork">See selected work</span> <i class="bi-arrow-down" aria-hidden="true"></i></a>
                         </div>
-
-                        <div class="hero-meta reveal reveal-delay-3" aria-label="Professional summary" data-i18n-aria="professionalSummary">
-                            <div><strong>9+</strong><span data-i18n="metaYears">Years in IT</span></div>
-                            <div><strong>2</strong><span data-i18n="metaOrganizations">Organizations</span></div>
-                            <div><strong>2017</strong><span data-i18n="metaStarted">Career started</span></div>
+                        <div class="home-trust-row" aria-label="Service highlights">
+                            <span><i class="bi-check-circle" aria-hidden="true"></i><b data-i18n="homeTrustOne">9+ years in IT</b></span>
+                            <span><i class="bi-geo-alt" aria-hidden="true"></i><b data-i18n="homeTrustTwo">Based in Klang, Selangor</b></span>
+                            <span><i class="bi-briefcase" aria-hidden="true"></i><b data-i18n="homeTrustThree">Individual &amp; business support</b></span>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <a class="scroll-cue" href="#about" aria-label="Scroll to about section" data-i18n-aria="scrollLabel"><span data-i18n="scroll">Scroll</span><i class="bi-arrow-down" aria-hidden="true"></i></a>
         </section>
 
-        <section class="section section-intro" id="about">
+        <section class="section home-about-section" aria-labelledby="home-about-title">
             <div class="container">
-                <div class="row g-5 align-items-start">
-                    <div class="col-lg-4">
-                        <p class="section-kicker" data-i18n="profileKicker">Profile / 01</p>
-                        <h2 data-i18n="profileTitle">Built around useful outcomes.</h2>
+                <article class="home-about-card">
+                    <div class="home-about-mark" aria-hidden="true"><span>IH</span></div>
+                    <div class="home-about-copy">
+                        <p class="section-kicker" data-i18n="homeAboutKicker">A little about me</p>
+                        <h2 id="home-about-title" data-i18n="homeAboutTitle">A system developer focused on useful outcomes.</h2>
+                        <p data-i18n="homeAboutBody">I’m Muhamad Ikhmal Hijaz, an IT professional working across system development, databases, maintenance, and business intelligence reporting since 2017.</p>
                     </div>
-                    <div class="col-lg-7 offset-lg-1">
-                        <p class="statement" data-i18n-html="profileStatement">My work sits where <span>software, data, and people</span> meet.</p>
-                        <p class="body-large" data-i18n="profileBody">Since 2017, I’ve helped build and maintain business systems, structure databases, and translate client requirements into practical dashboards and reports. I value dependable delivery, clear communication, and continuously improving how technology supports day-to-day work.</p>
-
-                        <div class="profile-details">
-                            <div class="profile-detail">
-                                <i class="bi-geo-alt" aria-hidden="true"></i>
-                                <span><small data-i18n="basedIn">Based in</small><span data-i18n="location">Klang, Selangor</span></span>
-                            </div>
-                            <div class="profile-detail">
-                                <i class="bi-briefcase" aria-hidden="true"></i>
-                                <span><small data-i18n="currentRole">Current role</small><span data-i18n="roleShort">Assistant IT Officer (FA5)</span></span>
-                            </div>
-                            <div class="profile-detail">
-                                <i class="bi-bar-chart-line" aria-hidden="true"></i>
-                                <span><small data-i18n="coreFocus">Core focus</small><span data-i18n="focusShort">Systems &amp; BI reporting</span></span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    <a class="button button-primary" href="about.html"><span data-i18n="homeAboutButton">Read my full profile</span> <i class="bi-arrow-right" aria-hidden="true"></i></a>
+                </article>
             </div>
         </section>
 
-        <section class="section section-dark" id="experience">
-            <div class="container">
-                <div class="section-heading light">
-                    <div>
-                        <p class="section-kicker" data-i18n="experienceKicker">Experience / 02</p>
-                        <h2 data-i18n="experienceTitle">A career connecting systems with decisions.</h2>
-                    </div>
-                    <p data-i18n="experienceIntro">Progressing from private-sector system development to supporting technology and reporting at Malaysia’s largest public university.</p>
-                </div>
-
-                <div class="timeline">
-                    <article class="timeline-item">
-                        <div class="timeline-date"><span>2021</span><span data-i18n="present">Present</span></div>
-                        <div class="timeline-marker" aria-hidden="true"></div>
-                        <div class="timeline-content">
-                            <div class="role-heading">
-                                <div>
-                                    <p class="company">Universiti Teknologi MARA (UiTM)</p>
-                                    <h3 data-i18n="uitmRole">Assistant Information Technology Officer (FA5)</h3>
-                                </div>
-                                <span class="status-pill"><span></span> <b data-i18n="current">Current</b></span>
-                            </div>
-                            <p data-i18n="uitmSummary">Developing and maintaining institutional systems while supporting the database structures and technical needs behind reliable daily operations.</p>
-                            <ul class="responsibility-list">
-                                <li data-i18n="uitmDuty1">Build and enhance web-based systems</li>
-                                <li data-i18n="uitmDuty2">Maintain existing applications and resolve system-related needs</li>
-                                <li data-i18n="uitmDuty3">Plan and support database structures</li>
-                            </ul>
-                            <div class="role-secondary">
-                                <span data-i18n="additionalResponsibility">Additional responsibility</span>
-                                <h4 data-i18n="reportBuilder">Report Builder</h4>
-                                <p data-i18n="uitmReportSummary">Developing reports around client requirements, maintaining report outputs, and assisting with presentations and delivery.</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="timeline-item">
-                        <div class="timeline-date"><span>2017</span>2021</div>
-                        <div class="timeline-marker" aria-hidden="true"></div>
-                        <div class="timeline-content">
-                            <div class="role-heading">
-                                <div>
-                                    <p class="company">Opensoft Technologies Sdn. Bhd.</p>
-                                    <h3 data-i18n="systemDeveloper">System Developer</h3>
-                                </div>
-                            </div>
-                            <p data-i18n="opensoftSummary">Built and maintained business systems, worked with database structures, and supported clients through technical delivery and ongoing maintenance.</p>
-                            <ul class="responsibility-list">
-                                <li data-i18n="opensoftDuty1">System development and maintenance</li>
-                                <li data-i18n="opensoftDuty2">Database structure and application support</li>
-                                <li data-i18n="opensoftDuty3">Client-aligned technical delivery</li>
-                            </ul>
-                            <div class="role-secondary">
-                                <span data-i18n="additionalResponsibility">Additional responsibility</span>
-                                <h4 data-i18n="tableauReportBuilder">Tableau Report Builder</h4>
-                                <p data-i18n="opensoftReportSummary">Created and maintained Tableau reports according to client needs and supported presentations and pitches.</p>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="expertise">
+        <section class="section portfolio-section section-soft" id="services">
             <div class="container">
                 <div class="section-heading">
                     <div>
-                        <p class="section-kicker" data-i18n="expertiseKicker">Expertise / 03</p>
-                        <h2 data-i18n="expertiseTitle">From raw requirements to working solutions.</h2>
+                        <p class="section-kicker" data-i18n="servicesKicker">IT services / 01</p>
+                        <h2 data-i18n="homeServicesTitle">Support that keeps your technology working.</h2>
                     </div>
-                    <p data-i18n="expertiseIntro">A practical toolkit shaped by hands-on delivery across systems, reporting, databases, and digital production.</p>
+                    <p data-i18n="homeServicesIntro">From everyday computer problems to business systems, I provide practical support with a clear scope and straightforward communication.</p>
                 </div>
 
-                <div class="expertise-grid">
-                    <article class="expertise-card featured-card">
-                        <span class="card-number">01</span>
-                        <i class="bi-window-stack card-icon" aria-hidden="true"></i>
-                        <h3 data-i18n="systemDevelopment">System Development</h3>
-                        <p data-i18n="systemDevelopmentBody">Designing, developing, and improving web systems that support real organizational processes.</p>
-                        <div class="tool-grid" aria-label="System development technologies" data-i18n-aria="systemToolsLabel">
-                            <span class="tool-item"><span class="tool-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/php/php-original.svg" alt="" loading="lazy" width="48" height="48"></span><b>PHP</b></span>
-                            <span class="tool-item"><span class="tool-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/laravel/laravel-original.svg" alt="" loading="lazy" width="48" height="48"></span><b>Laravel</b></span>
-                            <span class="tool-item"><span class="tool-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/yii/yii-original.svg" alt="" loading="lazy" width="48" height="48"></span><b>Yii</b></span>
-                            <span class="tool-item"><span class="tool-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/html5/html5-original.svg" alt="" loading="lazy" width="48" height="48"></span><b>HTML5</b></span>
-                            <span class="tool-item"><span class="tool-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/javascript/javascript-original.svg" alt="" loading="lazy" width="48" height="48"></span><b>JavaScript</b></span>
-                        </div>
+                <div class="home-service-grid">
+                    <article class="home-service-card">
+                        <i class="bi-laptop" aria-hidden="true"></i>
+                        <span>01</span>
+                        <h3 data-i18n="homeServiceSupport">Computer support</h3>
+                        <p data-i18n="homeServiceSupportBody">Windows setup, software troubleshooting, virus removal, optimisation, hardware upgrades, cleaning, and maintenance.</p>
                     </article>
-
-                    <article class="expertise-card">
-                        <span class="card-number">02</span>
-                        <i class="bi-bar-chart-line card-icon" aria-hidden="true"></i>
-                        <h3 data-i18n="businessIntelligence">Business Intelligence</h3>
-                        <p data-i18n="businessIntelligenceBody">Turning client requirements and operational data into reports that make information easier to understand and act on.</p>
-                        <div class="tool-grid" aria-label="Business intelligence technologies" data-i18n-aria="biToolsLabel">
-                            <span class="tool-item"><span class="tool-logo"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v13/icons/tableau.svg" alt="" loading="lazy" width="48" height="48"></span><b>Tableau</b></span>
-                            <span class="tool-item"><span class="tool-logo logo-power-bi"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v12/icons/powerbi.svg" alt="" loading="lazy" width="48" height="48"></span><b>Power BI</b></span>
-                            <span class="tool-item"><span class="tool-logo"><img src="https://cdn.simpleicons.org/metabase/509EE3" alt="" loading="lazy" width="48" height="48"></span><b>Metabase</b></span>
-                            <span class="tool-item"><span class="tool-logo"><img src="https://www.svgrepo.com/show/353875/highcharts.svg" alt="" loading="lazy" width="48" height="48"></span><b>Highcharts</b></span>
-                        </div>
+                    <article class="home-service-card">
+                        <i class="bi-buildings" aria-hidden="true"></i>
+                        <span>02</span>
+                        <h3 data-i18n="homeServiceBusiness">Business IT</h3>
+                        <p data-i18n="homeServiceBusinessBody">Office support visits, device health checks, inventory setup, monthly IT support, and practical consultation.</p>
                     </article>
-
-                    <article class="expertise-card">
-                        <span class="card-number">03</span>
-                        <i class="bi-database card-icon" aria-hidden="true"></i>
-                        <h3 data-i18n="dataDatabases">Data &amp; Databases</h3>
-                        <p data-i18n="dataDatabasesBody">Structuring, querying, and supporting the data foundations that applications and reports depend on.</p>
-                        <div class="tool-grid" aria-label="Data and database technologies" data-i18n-aria="dataToolsLabel">
-                            <span class="tool-item"><span class="tool-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/mysql/mysql-original.svg" alt="" loading="lazy" width="48" height="48"></span><b>MySQL</b></span>
-                            <span class="tool-item"><span class="tool-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/oracle/oracle-original.svg" alt="" loading="lazy" width="48" height="48"></span><b>Oracle DB</b></span>
-                            <span class="tool-item"><span class="tool-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/python/python-original.svg" alt="" loading="lazy" width="48" height="48"></span><b>Python</b></span>
-                        </div>
+                    <article class="home-service-card home-service-card-featured">
+                        <i class="bi-window-stack" aria-hidden="true"></i>
+                        <span>03</span>
+                        <h3 data-i18n="homeServiceDevelopment">Systems &amp; websites</h3>
+                        <p data-i18n="homeServiceDevelopmentBody">Websites and business systems designed around your workflow, information needs, users, and daily operations.</p>
                     </article>
-
-                    <article class="expertise-card">
-                        <span class="card-number">04</span>
-                        <i class="bi-tools card-icon" aria-hidden="true"></i>
-                        <h3 data-i18n="maintenanceSupport">Maintenance &amp; Support</h3>
-                        <p data-i18n="maintenanceSupportBody">Keeping existing systems and reports stable, relevant, and aligned with changing operational needs.</p>
-                        <div class="skill-tags"><span data-i18n="troubleshooting">Troubleshooting</span><span data-i18n="enhancements">Enhancements</span><span data-i18n="clientSupport">Client support</span></div>
+                    <article class="home-service-card">
+                        <i class="bi-device-ssd" aria-hidden="true"></i>
+                        <span>04</span>
+                        <h3 data-i18n="homeServiceData">Data &amp; devices</h3>
+                        <p data-i18n="homeServiceDataBody">Data backup, file transfer, system migration, printer setup, network printers, and logical data recovery.</p>
                     </article>
                 </div>
 
-                <div class="creative-strip">
+                <div class="section-action-row">
+                    <p data-i18n="homeServicesNote">Need pricing or the complete service list?</p>
+                    <a class="button button-primary" href="portfolio.html#services"><span data-i18n="homeServicesButton">View services &amp; pricing</span> <i class="bi-arrow-up-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section portfolio-section section-dark" id="work">
+            <div class="container">
+                <div class="section-heading light">
                     <div>
-                        <p class="section-kicker" data-i18n="beyondDevelopment">Beyond development</p>
-                        <h3 data-i18n="creativeTitle">Technical thinking with a creative eye.</h3>
+                        <p class="section-kicker" data-i18n="homeWorkKicker">Selected work / 02</p>
+                        <h2 data-i18n="homeWorkTitle">Systems built around real operations.</h2>
                     </div>
-                    <p data-i18n="creativeBody">Experience with Photoshop, Illustrator, video production, and photography supports stronger presentations and clearer digital communication.</p>
-                    <div class="creative-icons" aria-label="Creative capabilities" data-i18n-aria="creativeCapabilities">
-                        <span><i class="bi-camera"></i> <b data-i18n="photography">Photography</b></span>
-                        <span><i class="bi-film"></i> <b data-i18n="video">Video</b></span>
-                        <span><i class="bi-palette"></i> <b data-i18n="design">Design</b></span>
-                    </div>
+                    <p data-i18n="homeWorkIntro">A snapshot of institutional platforms and management systems I have helped develop, improve, and support.</p>
                 </div>
-            </div>
-        </section>
 
-        <section class="section section-soft" id="education">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-5">
-                        <p class="section-kicker" data-i18n="educationKicker">Education / 04</p>
-                        <h2 data-i18n="educationTitle">A strong foundation in programming.</h2>
-                        <p class="body-large" data-i18n="educationBody">Diploma in Information Technology (Programming), Politeknik Sultan Idris Shah, 2014–2017.</p>
-                    </div>
-                    <div class="col-lg-6 offset-lg-1">
-                        <div class="achievement-grid">
-                            <article><strong>3×</strong><span data-i18n="deansList">Dean’s List recipient</span></article>
-                            <article><strong>3.48</strong><span data-i18n="finalGpa">Final GPA</span></article>
-                            <article><strong data-i18n="topTen">Top 10</strong><span data-i18n="finalReport">Final report achievement</span></article>
-                            <article><i class="bi-people" aria-hidden="true"></i><span data-i18n="classPresident">Class president</span></article>
+                <div class="hands-on-grid home-work-grid">
+                    <article class="hands-on-card">
+                        <figure class="hands-on-visual">
+                            <img src="assets/images/hands-on/jakoa.webp" width="1047" height="420" loading="lazy" alt="JAKOA web systems and geospatial interface" data-i18n-alt="projectJakoaAlt">
+                        </figure>
+                        <div class="hands-on-content">
+                            <div class="project-card-top"><span>01</span><i class="bi-window-stack" aria-hidden="true"></i></div>
+                            <span class="confidential-label" data-i18n="confidentialLabel">Selected project</span>
+                            <h3>JAKOA</h3>
+                            <p data-i18n="projectJakoaBody">A digital ecosystem bringing together public information, online services, data management, and geospatial views.</p>
+                            <small data-i18n="projectJakoaMeta">Web portal · Data management · Geospatial</small>
                         </div>
-                        <p class="education-note" data-i18n="educationNote">Also served as secretariat for PHP and MySQL system development courses.</p>
-                    </div>
+                    </article>
+
+                    <article class="hands-on-card">
+                        <figure class="hands-on-visual">
+                            <img src="assets/images/hands-on/agi.webp" width="1047" height="420" loading="lazy" alt="AGI ethics compliance audit system" data-i18n-alt="projectAgiAlt">
+                        </figure>
+                        <div class="hands-on-content">
+                            <div class="project-card-top"><span>02</span><i class="bi-clipboard-check" aria-hidden="true"></i></div>
+                            <span class="confidential-label" data-i18n="confidentialLabel">Selected project</span>
+                            <h3>AGI</h3>
+                            <p data-i18n="projectAgiBody">An ethics compliance audit system supporting audit workflows, status monitoring, and centralised records.</p>
+                            <small data-i18n="projectAgiMeta">Audit workflow · Compliance · Dashboard</small>
+                        </div>
+                    </article>
+
+                    <article class="hands-on-card">
+                        <figure class="hands-on-visual">
+                            <img src="assets/images/hands-on/reciq.webp" width="1047" height="420" loading="lazy" alt="ReciQ login and management dashboard" data-i18n-alt="projectReciqAlt">
+                        </figure>
+                        <div class="hands-on-content">
+                            <div class="project-card-top"><span>03</span><i class="bi-speedometer2" aria-hidden="true"></i></div>
+                            <span class="confidential-label" data-i18n="subscriptionBadge">Subscription product</span>
+                            <h3>ReciQ</h3>
+                            <p data-i18n="subscriptionCardBody">A subscription-based management system with secure access, structured records, activity monitoring, and a central dashboard.</p>
+                            <small data-i18n="projectReciqMeta">Access control · Dashboard · Operations</small>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="section-action-row section-action-row-dark">
+                    <p data-i18n="homeWorkNote">See the broader project collection and subscription product.</p>
+                    <a class="button button-primary" href="portfolio.html#hands-on"><span data-i18n="homeWorkButton">Explore all work</span> <i class="bi-arrow-up-right" aria-hidden="true"></i></a>
                 </div>
             </div>
         </section>
 
-        <section class="portfolio-preview" id="portfolio-preview" aria-labelledby="portfolio-preview-title">
+        <section class="portfolio-cta" id="contact">
             <div class="container">
-                <div class="portfolio-preview-panel">
-                    <div class="portfolio-preview-copy">
-                        <p class="section-kicker" data-i18n="homePortfolioKicker">Portfolio / 05</p>
-                        <h2 id="portfolio-preview-title" data-i18n-html="homePortfolioTitle">Ideas are only the beginning. <em>See what I’ve built.</em></h2>
-                        <p data-i18n="homePortfolioBody">Explore the systems, data solutions, IT services, and practical projects where ideas become useful, working outcomes.</p>
+                <div class="portfolio-cta-inner">
+                    <div>
+                        <p class="section-kicker" data-i18n="portfolioCtaKicker">Build together</p>
+                        <h2 data-i18n="homeCtaTitle">Need IT support or a system built for your work?</h2>
+                        <p data-i18n="homeCtaBody">Tell me what is not working—or what you want to build—and we can find a practical next step.</p>
                     </div>
-                    <a class="button button-primary portfolio-preview-button" href="portfolio.html">
-                        <span data-i18n="homePortfolioButton">Explore my portfolio</span>
-                        <i class="bi-arrow-up-right" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-section" id="contact">
-            <div class="container">
-                <div class="contact-panel">
-                    <div class="contact-copy">
-                        <p class="section-kicker" data-i18n="contactKicker">Contact / 06</p>
-                        <h2 data-i18n="contactTitle">Have a system or reporting challenge?</h2>
-                        <p data-i18n="contactBody">Let’s talk about how clear technology and useful data can move the work forward.</p>
-                    </div>
-                    <div class="contact-actions">
-                        <a class="contact-link" href="mailto:ikhmalhijaz96@gmail.com">
-                            <span><small data-i18n="email">Email</small>ikhmalhijaz96@gmail.com</span>
-                            <i class="bi-arrow-up-right" aria-hidden="true"></i>
-                        </a>
-                    </div>
+                    <a class="button button-primary" href="mailto:ikhmalhijaz96@gmail.com?subject=Project%20or%20IT%20Service%20Enquiry"><span data-i18n="portfolioCtaButton">Start a conversation</span> <i class="bi-arrow-up-right" aria-hidden="true"></i></a>
                 </div>
             </div>
         </section>
