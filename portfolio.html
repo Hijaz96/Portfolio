@@ -178,6 +178,63 @@
 }
 </style>
 
+
+<!-- PORTFOLIO_VIEW_TOGGLE_V1 -->
+<style>
+/* Default: personal projects only; ?view=all: full portfolio */
+body:not(.portfolio-view-all) .portfolio-category-nav,
+body:not(.portfolio-view-all) #services,
+body:not(.portfolio-view-all) #subscription,
+body:not(.portfolio-view-all) #hands-on,
+body:not(.portfolio-view-all) .portfolio-cta { display:none !important; }
+body:not(.portfolio-view-all) .portfolio-hero { min-height:0 !important; padding:110px 0 12px !important; background:#071726 !important; }
+body:not(.portfolio-view-all) .portfolio-hero-image { display:none !important; }
+body:not(.portfolio-view-all) .portfolio-hero-content { padding-top:0 !important; padding-bottom:0 !important; }
+body:not(.portfolio-view-all) .portfolio-hero h1,
+body:not(.portfolio-view-all) .portfolio-hero .hero-actions,
+body:not(.portfolio-view-all) .portfolio-hero .portfolio-hero-content .col-xl-8 > p:not(.eyebrow) { display:none !important; }
+.portfolio-hero .eyebrow[data-i18n="portfolioHeroKicker"] { cursor:pointer; width:fit-content; user-select:none; }
+.portfolio-hero .eyebrow[data-i18n="portfolioHeroKicker"]:focus-visible { outline:2px solid #5fcfc3; outline-offset:5px; }
+body:not(.portfolio-view-all) #personal { scroll-margin-top:90px; padding-top:35px !important; }
+</style>
+<script>
+(function () {
+  function isAll() { return new URLSearchParams(location.search).get('view') === 'all'; }
+  function setMode(all, updateUrl) {
+    document.body.classList.toggle('portfolio-view-all', all);
+    var trigger = document.querySelector('.portfolio-hero .eyebrow[data-i18n="portfolioHeroKicker"]');
+    if (trigger) {
+      trigger.setAttribute('role', 'button');
+      trigger.setAttribute('tabindex', '0');
+      trigger.setAttribute('aria-expanded', String(all));
+      trigger.setAttribute('title', all ? 'Show personal projects only' : 'Show full portfolio');
+    }
+    if (updateUrl) {
+      var url = new URL(location.href);
+      if (all) url.searchParams.set('view', 'all');
+      else url.searchParams.delete('view');
+      url.hash = '';
+      history.pushState({portfolioView:all}, '', url.pathname + url.search);
+      window.scrollTo({top:0, behavior:'smooth'});
+    }
+  }
+  // Apply mode before page paints to avoid displaying hidden sections.
+  if (isAll()) document.documentElement.classList.add('portfolio-initial-all');
+  document.addEventListener('DOMContentLoaded', function () {
+    setMode(isAll(), false);
+    var trigger = document.querySelector('.portfolio-hero .eyebrow[data-i18n="portfolioHeroKicker"]');
+    if (trigger) {
+      trigger.addEventListener('click', function () { setMode(!document.body.classList.contains('portfolio-view-all'), true); });
+      trigger.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); trigger.click(); }
+      });
+    }
+    window.addEventListener('popstate', function () { setMode(isAll(), false); });
+  });
+})();
+</script>
+<!-- END PORTFOLIO_VIEW_TOGGLE_V1 -->
+
 </head>
 
 <body data-page="portfolio">
