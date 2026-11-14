@@ -235,6 +235,38 @@ body:not(.portfolio-view-all) #personal { scroll-margin-top:90px; padding-top:35
 </script>
 <!-- END PORTFOLIO_VIEW_TOGGLE_V1 -->
 
+
+<style>
+/* PERSONAL_MOBILE_OVERRIDE_V2 */
+@media screen and (max-width: 767px) {
+  #personal-projects-v31 .hands-on-grid,
+  #personal-projects-v31 > .hands-on-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 20px !important;
+  }
+
+  #personal-projects-v31 .hands-on-card,
+  #personal-projects-v31 > .hands-on-card {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  #personal-projects-v31 .hands-on-card .hands-on-content {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  #personal-projects-v31 .hands-on-card h3,
+  #personal-projects-v31 .hands-on-card p {
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+}
+</style>
+
 </head>
 
 <body data-page="portfolio">
