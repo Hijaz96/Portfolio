@@ -127,6 +127,57 @@
 }
 </style>
 
+
+<style>
+/* PERSONAL_PROJECTS_RESPONSIVE_V2 */
+
+#personal-projects-v31 {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    gap: 20px !important;
+}
+
+#personal-projects-v31 > .hands-on-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+}
+
+@media (max-width: 767px) {
+    #personal-projects-v31 {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 18px !important;
+    }
+
+    #personal-projects-v31 > .hands-on-card {
+        flex: none !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        min-height: 360px !important;
+    }
+
+    #personal-projects-v31 .hands-on-content {
+        width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    #personal-projects-v31 h3,
+    #personal-projects-v31 p {
+        overflow-wrap: break-word !important;
+        word-break: normal !important;
+        white-space: normal !important;
+    }
+}
+</style>
+
 </head>
 
 <body data-page="portfolio">
