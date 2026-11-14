@@ -37,6 +37,96 @@
 #personal-projects-v31 .hands-on-card .button {position:relative;z-index:2;}
 /* END Personal Projects artwork */
 </style>
+
+<style>
+/* PERSONAL_PROJECTS_MOBILE_FIX_V1 */
+@media (max-width: 767px) {
+  #personal-projects-v31 {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  #personal-projects-v31 .hands-on-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 20px !important;
+    padding: 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  #personal-projects-v31 .hands-on-card {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: auto !important;
+    min-height: 420px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    border-radius: 20px !important;
+    padding: 24px !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  #personal-projects-v31 .hands-on-card .hands-on-content {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    min-height: 360px !important;
+    box-sizing: border-box !important;
+  }
+
+  #personal-projects-v31 .hands-on-card h3 {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: clamp(24px, 7vw, 32px) !important;
+    line-height: 1.2 !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  #personal-projects-v31 .hands-on-card p {
+    width: 100% !important;
+    max-width: 100% !important;
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  #personal-projects-v31 .hands-on-card::before {
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  #personal-projects-v31 .hands-on-card::after {
+    content: "" !important;
+    position: absolute !important;
+    inset: 0 !important;
+    background: linear-gradient(
+      to bottom,
+      rgba(3, 15, 27, .18),
+      rgba(3, 15, 27, .88)
+    ) !important;
+    pointer-events: none !important;
+  }
+
+  #personal-projects-v31 .hands-on-card .hands-on-content {
+    position: relative !important;
+    z-index: 2 !important;
+  }
+}
+</style>
+
 </head>
 
 <body data-page="portfolio">
